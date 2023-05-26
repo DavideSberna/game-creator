@@ -15,6 +15,12 @@ class GameController extends Controller
         return view ('home', compact('characters'));
     }
 
+    public function show($id) {
+        $character = Character::find($id);
+
+        return view ('charater', compact('character'));
+    }
+
 
 
 }
