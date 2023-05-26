@@ -14,10 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('characters', function (Blueprint $table) {
-            $table->id();
-            $table->string('name', 200);
-            $table->string('description', 200);
-            $table->id('type_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('description');
+            $table->bigInteger('type_id')->unsigned();
             $table->integer('attack')->unsigned();
             $table->integer('defence')->unsigned();
             $table->integer('speed')->unsigned();

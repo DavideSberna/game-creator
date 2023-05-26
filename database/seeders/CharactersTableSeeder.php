@@ -23,7 +23,7 @@ class CharactersTableSeeder extends Seeder
             $newCharacter->description = $faker->paragraph();
             $newCharacter->type_id = $faker->numberBetween(0, 10);
             $newCharacter->attack = $faker->numberBetween(0, 100);
-            $newCharacter->defense = $faker->numberBetween(0, 100);
+            $newCharacter->defence = $faker->numberBetween(0, 100);
             $newCharacter->speed = $faker->numberBetween(0, 50);
             $newCharacter->life = $faker->numberBetween(0, 1000);
             $newCharacter->save();

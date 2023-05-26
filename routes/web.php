@@ -15,5 +15,5 @@ use App\Http\Controllers\GameController;
 |
 */
 
-Route::get('/', [GameController::class, 'index'])->mame('home');
+Route::get('/', [GameController::class, 'index'])->name('home');
 Route::get('/character/{id}', [GameController::class, 'show'])->name('character');
